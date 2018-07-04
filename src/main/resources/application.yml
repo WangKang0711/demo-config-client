@@ -1,0 +1,17 @@
+server:
+  port: 8711
+
+eureka:
+  client:
+    serviceUrl:
+          defaultZone: http://172.16.2.176:8761/eureka/
+
+spring:
+  application:
+      name: demo-config-client
+  rabbitmq:
+      host: 172.16.2.176
+      port: 5672
+      username: admin
+      password: admin123
+

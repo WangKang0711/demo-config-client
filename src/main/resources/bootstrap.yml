@@ -1,0 +1,12 @@
+spring:
+  cloud:
+      config:
+        discovery:
+          enabled: true 
+          service-id: demo-config-server
+        profile: dev
+        label: master
+        
+management:
+  security:
+     enabled: false
