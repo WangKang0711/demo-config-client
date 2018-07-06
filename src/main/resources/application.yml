@@ -4,7 +4,7 @@ server:
 eureka:
   client:
     serviceUrl:
-          defaultZone: http://172.16.2.176:8761/eureka/
+          defaultZone: http://peer1:8761/eureka/
   instance:
     prefer-ip-address: true
 
@@ -12,7 +12,7 @@ spring:
   application:
       name: demo-config-client
   rabbitmq:
-      host: 172.16.2.176
+      host: peer1
       port: 5672
       username: admin
       password: admin123
